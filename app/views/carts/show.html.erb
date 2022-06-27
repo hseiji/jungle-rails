@@ -4,8 +4,6 @@
     <h1>My Cart</h1>
   </header>
 
-
-
   <% if enhanced_cart.length() == 0 %>
       <h2>Empty Cart</h2>
       <p class="alert alert-danger">Please add something to your cart</p>
@@ -31,7 +29,7 @@
               TOTAL:
             </th>
             <th>
-              <%= cart_subtotal_cents / 100.0 %>
+              <%=humanized_money_with_symbol cart_subtotal_cents / 100.0 %>
             </th>
           </tr>
         </tfoot>
