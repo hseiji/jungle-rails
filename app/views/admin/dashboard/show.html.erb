@@ -1,4 +1,12 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+<h1>Admin - Dashboard</h1>
+<hr>
 
-<h1>Products available: <%= @products = Product.all.count %></h1>
+<h2>Products available: <%= @products %></h2>
+<a href="/admin/products/" ><h5>View all products</h5></a>
+<br>
+<h2>Categories available: <%= @categories %></h2>
+<a href="/categories/1" ><h5>Evergreens</h5></a>
+<a href="/categories/2" ><h5>Shrubs</h5></a>
+<a href="/categories/3" ><h5>Trees</h5></a>
+
+
