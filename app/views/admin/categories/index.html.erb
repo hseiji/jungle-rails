@@ -2,6 +2,11 @@
 <hr>
 
 <h2>Categories available</h2>
+
+<div class="well">
+  <%= link_to '+ New Category', [:new, :admin, :category], class: 'btn btn-info' %>
+</div>
+
 <% @categories.each do |cat| %>
   <p><%= cat.name %></p>
 <% end %> 
